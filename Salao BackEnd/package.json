@@ -8,9 +8,8 @@
   },
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
-   
     "start": "node dist/server.js",
-    "build": "prisma generate && <actual-build-command>",
+    "build": "tsc && prisma generate",
     "postinstall": "prisma generate"
   },
   "devDependencies": {
